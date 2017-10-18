@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>员工管理</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/typography.css">
+<link rel="stylesheet" href="css/layoutlayout.css"/>
+</head>
+<body>
+<div class="header">
+  <div class="header-1">
+    <div class="w1156">
+      <ul class="clearfix">
+        <li>您好</li>
+        <li class="li-bd">|</li>
+        <li>12345@allinpay.com</li>
+        <li class="li-bd">|</li>
+        <li><a href="/">退出</a></li>
+        <li class="li-bd">|</li>
+        <li><a href="/">新手指南</a></li>
+        <li class="li-bd">|</li>
+        <li><a href="/">投诉建议</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="header-2">
+    <div class="w1156">
+      <p class="logo">
+        <a href="/">
+          <img src="images/logo.png" alt="" width="237" height="67">
+        </a>
+      </p>
+      <p class="info">企业服务</p>
+      <ul class="clearfix">
+        <li>首页</li>
+        <li>交易管理</li>
+        <li>账户会员</li>
+        <li class="cur">企业管理</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container clearfix">
+  <div class="toptopbar">
+    <ul>
+      <li><a href="###"><em>•</em>基本信息</a></li>
+      <li class="cur"><a href="###"><em>•</em>员工管理</a></li>
+      <li><a href="###"><em>•</em>安全设置</a></li>
+      <li><a href="###"><em>•</em>秘钥文件下载</a></li>
+      <li><a href="###"><em>•</em>md5设置</a></li>
+    </ul>
+  </div>
+  <div class="w1156 clearfix">
+    <div class="sidebar">
+      <ul>
+        <li><a href="###">基本信息<i class="icon-right"></i></a></li>
+        <li class="cur"><a href="###">员工管理<i class="icon-right"></i></a></li>
+        <li><a href="###">安全设置<i class="icon-right"></i></a></li>
+        <li><a href="###">秘钥文件下载<i class="icon-right"></i></a></li>
+        <li><a href="###">md5设置<i class="icon-right"></i></a></li>
+      </ul>
+    </div>
+    <div class="mainmain">
+      <div class="page-accountSetup-row2">
+        <div class="title"><h4>员工管理</h4></div>
+        <div class="staff-box">
+          <div class="staff-top">
+            <input type="button" value="添加员工" onclick="return add();">
+            <input type="button" value="批量添加员工" onclick="return lotadd();">
+            <div class="search-box">
+              <label>关键字</label>
+              <input type="text" placeholder="员工姓名/手机号/邮箱">
+              <input type="button" class="search" value="搜索">
+            </div>
+          </div>
+          <div class="staff-table">
+            <table>
+              <tr>
+                <th><input type="checkbox"></th>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>手机号码</th>
+                <th>性别</th>
+                <th>身份证</th>
+                <th>生日</th>
+                <th>邮箱地址</th>
+                <th>员工福利</th>
+                <th>资金代发</th>
+                <th>操作</th>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>1</td>
+                <td>张三</td>
+                <td>13312341234</td>
+                <td>男</td>
+                <td>123456********1234</td>
+                <td>1999/09/09</td>
+                <td>1234@allinpay.com</td>
+                <td>未开通</td>
+                <td>已开通</td>
+                <td><a href="###" onclick="return edit();">编辑</a></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>2</td>
+                <td>张三</td>
+                <td>13312341234</td>
+                <td>男</td>
+                <td>123456********1234</td>
+                <td>1999/09/09</td>
+                <td>1234@allinpay.com</td>
+                <td>未开通</td>
+                <td>已开通</td>
+                <td><a href="###">编辑</a></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>3</td>
+                <td>张三</td>
+                <td>13312341234</td>
+                <td>男</td>
+                <td>123456********1234</td>
+                <td>1999/09/09</td>
+                <td>1234@allinpay.com</td>
+                <td>未开通</td>
+                <td>已开通</td>
+                <td><a href="###">编辑</a></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>4</td>
+                <td>张三</td>
+                <td>13312341234</td>
+                <td>男</td>
+                <td>123456********1234</td>
+                <td>1999/09/09</td>
+                <td>1234@allinpay.com</td>
+                <td>未开通</td>
+                <td>已开通</td>
+                <td><a href="###">编辑</a></td>
+              </tr>
+            </table>
+          </div>
+          <!-- <input type="button" class="del" value="批量删除" onclick="return del();"> -->
+          <input type="button" class="del" value="批量删除" onclick="return lotdel();">
+          <div class="staff-bottom">
+            <div class="content-box">
+              <div class="fenye">
+                <a onclick="javascript:homePage()">首页</a>
+                <a onclick="javascript:beforePage()">上一页</a>
+                <a id="nextPage" onclick="javascript:afterPage()">下一页</a>
+                <a onclick="javascript:endPage()">尾页</a>
+              </div>
+              <a>总记录数<span id="pageSumSize">12</span></a>
+              <a>每页&nbsp;
+                <select id="pageShowSize" onchange="changeShowSize()">
+                  <option>10</option>
+                  <option>20</option>
+                </select>
+              &nbsp;条</a>
+              <a>当前第&nbsp;<span id="pageIndex">1</span>&nbsp;页</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bggray"></div>
+<div class="modal edit-modal" style="display: none;">
+  <div class="modal-tit">
+    <h4>编辑</h4>
+    <i class="close"></i>
+  </div>
+  <div class="modal-con">
+    <ul>
+      <li>
+        <label>员工姓名：</label>
+        <input type="text">
+        <em class="not-null">*</em>
+      </li>
+      <li>
+        <label>身份证：</label>
+        <input type="text">
+        <em class="not-null">*</em>
+      </li>
+      <li>
+        <label>手机号码：</label>
+        <input type="text">
+        <em class="not-null">*</em>
+      </li>
+      <li>
+        <label>邮箱地址：</label>
+        <input type="text">
+      </li>
+      <li>
+        <label>性别：</label>
+        <input type="radio">男
+        <input type="radio" class="ml30">女
+      </li>
+      <li>
+        <label>员工生日：</label>
+        <input type="text">
+      </li>
+      <li>
+        <label>服务状态：</label>
+        <a href="###" class="choose cur">员工福利</a>
+        <a href="###" class="choose">资金代发</a>
+      </li>
+      <li>
+        <label>备注：</label>
+        <textarea></textarea>
+      </li>
+    </ul>
+  </div>
+  <div class="modal-btn">
+    <input type="button" class="off" value="删除">
+    <input type="button" class="on" value="保存">
+  </div>
+</div>
+<div class="modal del-modal" style="display: none;">
+  <div class="modal-tit">
+    <h4>批量删除</h4>
+    <i class="close"></i>
+  </div>
+  <div class="modal-con">
+    <p>请在员工列表中勾选要删除的员工</p>
+  </div>
+</div>
+<div class="modal lotdel-modal" style="display: none;">
+  <div class="modal-tit">
+    <h4>批量删除</h4>
+    <i class="close"></i>
+  </div>
+  <div class="modal-con">
+    <p>删除选中的<a href="###">99条</a>员工信息</p>
+  </div>
+  <div class="modal-btn">
+    <input type="button" class="off" value="删除">
+    <input type="button" class="on" value="确认删除">
+  </div>
+</div>
+<div class="modal add-modal" style="display: none;">
+  <div class="modal-tit">
+    <h4>添加员工</h4>
+    <i class="close"></i>
+  </div>
+  <div class="modal-con">
+    <ul>
+      <li>
+        <label>员工姓名：</label>
+        <input type="text">
+        <em class="not-null">*</em>
+      </li>
+      <li>
+        <label>身份证：</label>
+        <input type="text">
+        <em class="not-null">*</em>
+      </li>
+      <li>
+        <label>手机号码：</label>
+        <input type="text">
+        <em class="not-null">*</em>
+      </li>
+      <li>
+        <label>邮箱地址：</label>
+        <input type="text">
+      </li>
+      <li>
+        <label>性别：</label>
+        <input type="radio">男
+        <input type="radio" class="ml30">女
+      </li>
+      <li>
+        <label>员工生日：</label>
+        <input type="text">
+      </li>
+      <li class="wp100">
+        <label>备注：</label>
+        <textarea></textarea>
+      </li>
+    </ul>
+  </div>
+  <div class="modal-btn">
+    <input type="button" class="on" value="保存">
+  </div>
+</div>
+<div class="modal lotadd-modal" style="display: none;">
+  <div class="modal-tit">
+    <h4>批量添加员工</h4>
+    <i class="close"></i>
+  </div>
+  <div class="modal-con">
+    <div class="tip">
+      <span>1.</span>
+      <input type="button" class="on" value="下载标准模板">
+      <p>员工信息模板，请输入员工信息</p>
+    </div>
+    <div class="tip">
+      <span>2.</span>
+      <div class="upload">
+        <input type="button" class="off" value="选择文件">
+        <input type="text" value="未选择任何文件">
+      </div>
+      <p>批量导入新增或更新员工信息</p>
+    </div>
+  </div>
+  <div class="modal-btn">
+    <input type="button" class="on" value="导入员工信息">
+  </div>
+</div>
+<div class="footer">
+  <p>Copyright © 2015-2016&nbsp;通联支付网络服务股份有限公司&nbsp;版权所有&nbsp;沪ICPB备09026459号－15</p>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+function edit() {
+  var bggray = $(".bggray");
+  var modal = $(".edit-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+function del() {
+  var bggray = $(".bggray");
+  var modal = $(".del-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+function lotdel() {
+  var bggray = $(".bggray");
+  var modal = $(".lotdel-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+function add() {
+  var bggray = $(".bggray");
+  var modal = $(".add-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+function lotadd() {
+  var bggray = $(".bggray");
+  var modal = $(".lotadd-modal");
+  bggray.css("height", window.screen.height);
+  bggray.css("width", window.screen.width);
+  bggray.show();
+  modal.show();
+}
+</script>
+</body>
+</html>
