@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /*首页*/
 .head-search{
   float: right;
@@ -490,10 +490,63 @@
   padding: 10px 0 10px 20px;
   font-size: 14px;
 }
+.store.iteminfo .gray{
+  float: left;
+  margin-right: 15px;
+  line-height: 25px;
+}
+.store.iteminfo .clear{
+  clear: both;
+}
+.icon_bg{
+  background: url(../images/icon_bg.png) 0 0 no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  background-size: 15px 175px;
+}
+.store.iteminfo p i{
+  width: 15px;
+  vertical-align: middle;
+}
 .store.iteminfo p i.wifi{
-  width: 14px;
-  height: 9px;
-  background-position: 0 -156px;
+  height: 12px;
+  background-position: 0 -149px;
+}
+.store.iteminfo p i.bx{
+  height: 15px;
+  background-position: 0 -40px;
+}
+.store.iteminfo p i.ltw{
+  height: 16px;
+  background-position: 0 -68px;
+}
+.store.iteminfo p i.tc{
+  height: 16px;
+  background-position: 0 -120px;
+}
+.store.iteminfo p i.bby{
+  height: 21px;
+  background-position: 0 -17px;
+}
+.store.iteminfo p i.wyq{
+  height: 18px;
+  background-position: 0 -84px;
+}
+.store.iteminfo p i.sk{
+  height: 14px;
+  background-position: 0 -54px;
+}
+.store.iteminfo p i.allday{
+  height: 14px;
+  background-position: 0 0;
+}
+.store.iteminfo p i.ykp{
+  height: 14px;
+  background-position: 0 bottom;
+}
+.store.iteminfo p i.wm{
+  height: 12px;
+  background-position: 0 -136px;
 }
 /*会员卡详情*/
 .card-big{
@@ -579,6 +632,11 @@
   width: 10px;
   height: 10px;
   margin-top: 0;
+}
+.card-box a.link .icon-down:before{
+  width: 10px;
+  height: 10px;
+  margin-top: -3px;
 }
 .card-use{
   margin-top: 20px;
