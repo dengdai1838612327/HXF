@@ -23,9 +23,13 @@
 </div>
 <div class="content" style="padding:45px 0 0;">
   <div class="banner mb0">
-    <a href="###">
-      <img class="store-banner" src="images/store-banner.jpg">
-    </a>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="store-banner" src="images/store-banner.jpg"></div>
+        <div class="swiper-slide"><img class="store-banner" src="images/store-banner.jpg"></div>
+        <div class="swiper-slide"><img class="store-banner" src="images/store-banner.jpg"></div>
+      </div>
+    </div>
     <div class="cover">
       <span class="fr">30张</span>
       <i class="all_bg pic fr"></i>
@@ -115,9 +119,17 @@
         <i class="icon_bg wm"></i>
         <span>外卖</span>
       </p>
+      <p class="gray">
+        <i class="icon_bg qt"></i>
+        <span>其他</span>
+      </p>
       <p class="gray clear">营业时间：10:00-21:00</p>
     </div>
   </div>
 </div>
+<script src="js/swiper.min.js"></script>
+<script>
+var mySwiper = new Swiper('.swiper-container');
+</script>
 </body>
 </html>
