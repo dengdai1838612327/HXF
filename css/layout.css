@@ -1022,6 +1022,16 @@
   left: 0;
   font-size: 11px;
 }
+.infolist .store-img i.red{
+  width: 48px;
+  height: 16px;
+  background-position: right -170px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 11px;
+}
 .card-box.whole .rule-list li label.wp35{
   width: 35%;
 }
