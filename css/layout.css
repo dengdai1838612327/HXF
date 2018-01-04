@@ -1127,3 +1127,99 @@
   height: 100%;
   position: relative;
 }
+/*注册*/
+.bg-repeat{
+  background-color: #d1372d;
+  width: 100%;
+  height: 100%;
+}
+.log-head{
+  overflow: hidden;
+}
+.log-form{
+  width: 90%;
+  height: 156px;
+  margin: 0 5%;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -180px;
+}
+.log-form .h33p{
+  height: 33%;
+  border-bottom: 1px solid #dbdbdb;
+}
+.log-form .h33p:last-child{
+  border-bottom: none;
+}
+.log-form .h33p i.all_bg{
+  display: inline-block;
+  width: 19px;
+  height: 28px;
+  margin-top: 12px;
+  position: absolute;
+  left: 15px;
+}
+.log-form .mobile i.all_bg{
+  background-position: -187px -195px;
+}
+.log-form .code i.all_bg{
+  background-position: -165px -195px;
+}
+.log-form .pwd i.all_bg{
+  background-position: -146px -195px;
+}
+.log-form .h33p input[type='text'],
+.log-form .h33p input[type='password']{
+  width: 83%;
+  height: 96%;
+  border: none;
+  vertical-align: top;
+  font-size: 14px;
+  padding-left: 15%;
+}
+.log-form .h33p.mobile input[type='text']{
+  width: 58%;
+}
+.log-form .mobile input[type='button']{
+  width: 60px;
+  height: 30px;
+  background-color: #ef5d3d;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+  vertical-align: top;
+  margin: 10px 0 0 0;
+  padding: 0;
+  position: absolute;
+  right: 15px;
+  text-align: center;
+  text-indent: 0;
+}
+.log-btn{
+  width: 90%;
+  margin: 0 5%;
+  position: absolute;
+  top: 50%;
+}
+.log-btn input{
+  width: 100%;
+  height: 40px;
+  background-color: #3d96ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.log-foot{
+  position: fixed;
+  bottom: -1px;
+  width: 100%;
+  z-index: -1;
+}
+.log-foot img{
+  display: block;
+}
