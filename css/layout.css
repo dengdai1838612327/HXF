@@ -1146,10 +1146,12 @@
   position: absolute;
   top: 50%;
   margin-top: -180px;
+  overflow: hidden;
 }
 .log-form .h33p{
   height: 33%;
   border-bottom: 1px solid #dbdbdb;
+  position: relative;
 }
 .log-form .h33p:last-child{
   border-bottom: none;
@@ -1169,6 +1171,9 @@
   background-position: -165px -195px;
 }
 .log-form .pwd i.all_bg{
+  background-position: -146px -195px;
+}
+.log-form .tw-code i.all_bg{
   background-position: -146px -195px;
 }
 .log-form .h33p input[type='text'],
@@ -1198,6 +1203,17 @@
   right: 15px;
   text-align: center;
   text-indent: 0;
+}
+.log-form .h33p.tw-code input[type='text']{
+  width: 50%;
+}
+.log-form .tw-code img{
+  width: 80px;
+  height: 35px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -18px;
 }
 .log-btn{
   width: 90%;
