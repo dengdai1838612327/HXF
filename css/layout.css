@@ -1239,3 +1239,37 @@
 .log-foot img{
   display: block;
 }
+/*20170130补充*/
+.link-group p{
+  display: block;
+  overflow: hidden;
+  line-height: 35px;
+  border-bottom: 1px dotted #dbdbdb;
+  padding-right: 20px;
+  margin-left: 20px;
+  color: #666;
+}
+.link-group p i.quan{
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 8px 8px 0 0;
+  background-position: -27px -73px;
+}
+.link-group p .f12{
+  font-size: 12px;
+}
+.link-group p button{
+  float: right;
+  width: 80px;
+  height: 25px;
+  padding: 0;
+  margin-top: 5px;
+  color: #fff;
+  background-color: #ccc;
+  border-radius: 3px;
+  border: none;
+}
+.link-group p button.on{
+  background-color: #ff8400;
+}
